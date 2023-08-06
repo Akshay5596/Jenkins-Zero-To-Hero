@@ -11,7 +11,7 @@ pipeline {
     //     sh 'echo passed'
     //    // git branch: 'main', url: 'https://github.com/Akshay5596/Jenkins-Zero-To-Hero'
     //   }
-    }
+    // }
     stage('Build and Test') {
       steps {
         sh 'ls -ltr'
