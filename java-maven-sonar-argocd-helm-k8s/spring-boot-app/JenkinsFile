@@ -1,4 +1,4 @@
-lspipeline {
+pipeline {
   agent {
     docker {
       image 'akshaypatil5596/maven-abhishek-docker-agent:v1'
