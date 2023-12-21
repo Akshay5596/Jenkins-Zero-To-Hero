@@ -46,7 +46,7 @@ pipeline {
                     }
       }
     }
-  }
+}
 //     java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
 //     stage('Update Deployment File') {
 //         environment {
@@ -69,3 +69,4 @@ pipeline {
 //     }
 //   }
 // }
+}
