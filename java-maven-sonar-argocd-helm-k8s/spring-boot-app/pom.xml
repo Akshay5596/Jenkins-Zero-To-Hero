@@ -58,16 +58,18 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1.0</version>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                </configuration>
-            </plugin>
+         <repositories>
+           <repository>
+             <id>custom-repository</id>
+             <url>https://maven.alias.org/</url>
+           </repository>
+         </repositories>
+         <dependency>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-compiler-plugin</artifactId>
+           <version>3.1.0</version>
+           <repository>custom-repository</repository>
+         </dependency>
 
         </plugins>
     </build>
